@@ -104,38 +104,38 @@ public class Electrodomestico {
 	 */
 	public void precioFinal( ) {
 
-		switch (this.consumo) {
+		switch (getConsumo()) {
 		case 'a':
-			this.precioBase= this.precioBase+100;
+			setPrecioBase( getPrecioBase()+(100*800));
 			break;
 		case 'b':
-			this.precioBase= this.precioBase+80;
+			setPrecioBase( getPrecioBase()+(80*800));
 			break;
 		case 'c':
-			this.precioBase= this.precioBase+60;
+			setPrecioBase( getPrecioBase()+(60*800));
 			break;
 		case 'd':
-			this.precioBase= this.precioBase+50;
+			setPrecioBase( getPrecioBase()+(50*800));
 			break;
 		case 'e':
-			this.precioBase= this.precioBase+300;
+			setPrecioBase( getPrecioBase()+(30*800));
 			break;
 		case 'f':
-			this.precioBase= this.precioBase+10;
+			setPrecioBase( getPrecioBase()+(10*800));
 			break;
 		}
 
 		if(this.peso>80) {
-			this.precioBase= this.precioBase+100;
+			setPrecioBase( getPrecioBase()+(100*800));
 		}
 		if(this.peso>49 && this.peso <80) {
-			this.precioBase= this.precioBase+80;
+			setPrecioBase( getPrecioBase()+(80*800));
 		}
 		if (this.peso>19 && this.peso <50) {
-			this.precioBase= this.precioBase+50;
+			setPrecioBase( getPrecioBase()+(50*800));
 		}
 		if (this.peso>=0 && this.peso <20) {
-			this.precioBase= this.precioBase+10;
+			setPrecioBase( getPrecioBase()+(10*800));
 		}
 
 

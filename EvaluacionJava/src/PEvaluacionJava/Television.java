@@ -61,10 +61,10 @@ public class Television extends Electrodomestico{
 	public void precioFinal() {
 		super.precioFinal();
 		int preciofinal=super.getPrecioBase();
-		if (this.resolucion>40) {
+		if (getResolucion()>40) {
 			preciofinal= (int) (preciofinal*1.30);
-			if (this.sintonizadorTDT==true) {
-				preciofinal= preciofinal + 50;
+			if (isSintonizadorTDT()==true) {
+				preciofinal= preciofinal + (50*800);
 				super.setPrecioBase(preciofinal);
 			}
 		}

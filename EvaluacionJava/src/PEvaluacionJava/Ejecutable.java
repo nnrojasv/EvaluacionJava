@@ -42,14 +42,21 @@ public class Ejecutable {
 		}
 		// Suma precio de los objetos segun su clase
 		for(Electrodomestico objeto: listaelectrodomesticos) {
+			int precio=objeto.getPrecioBase();
+		
+			
 			if (objeto instanceof Electrodomestico ){
-				precioelectrodomesticos = precioelectrodomesticos + objeto.getPrecioBase();
+				
+				precioelectrodomesticos = precioelectrodomesticos + precio;
+				
 			}
 			if (objeto instanceof Lavadora ){
-				preciolavadoras = preciolavadoras + objeto.getPrecioBase();
+				preciolavadoras = preciolavadoras + precio;
+				
 			}
 			if (objeto instanceof Television ){
-				preciotelevisores = preciotelevisores + objeto.getPrecioBase();
+				preciotelevisores = preciotelevisores + precio;
+				
 			}
 		}
 		System.out.println( "suma precio electrodomesticos: " + precioelectrodomesticos);
